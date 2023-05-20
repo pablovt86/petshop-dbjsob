@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs') %> 
+<body class="carrito-body">
+  <%- include('../partials/header.ejs') %> 
+  <main>
+        <div class="buy-cart-container">
+            <form class="buy-cart-form" autocomplete="off">
+                <div class="buy-cart"><p>Carrito de compras</p></div>
+                <div class="encabezados-carrito">
+                    <p class="article-title">Producto</p>
+                    <p class="price-title">Precio</p>
+                    <p class="sub-title">Subtotal</p>
+                </div>
+                <div class="contenedor-articulo">
+                    <div class="vista-articulo">
+                        <div class="imagen-cucha"><img src="../images/cucha-gato.png" alt="foto de cucha-gato"></div>
+                        <div class="accountant">
+                            <button class="button-accountant" id="increment-product">+</button>
+                            <input class="input-amount" type="text" name="amount" id="amount">
+                            <button class="button-accountant" id="decrement-product">-</button>
+                        </div>
+                    </div>
+                    <div class="reseña">
+                        <p>Cucha para gatos.</p>
+                        <button class="delete"><img src="../images/icons-forms/delete.png" width="30px" alt="icono eliminar producto"></button>
+                    </div>
+                    <div class="price-item"><p class="prices">$0.00</p></div>
+                    <div class="sub-item"><p class="totals">$0.00</p></div>
+                </div>
+                <div class="gral-delivery"><p>Envio</p></div>
+                <div class="pay-delivery">
+                    <label for="">Calcular envio
+                        <select name="envio" id="envio">
+                            <option value="disable">Provincia</option>
+                            <optgroup label="Buenos Aires">
+                                <option value="">Adrogué</option>
+                                <option value="">Avellaneda</option>
+                                <option value="">Otra localidad...</option>
+                            </optgroup>
+                            <optgroup label="Catamarca"></optgroup>
+                            <option value="">San Fernando</option>
+                            <option value="">Otra localidad..</option>
+                            <optgroup label="Chaco"></optgroup>
+                            <option value="">Resistencia</option>
+                            <optgroup label="Córdoba">
+                                <option value="">Alta Córdoba</option>
+                            </optgroup>
+                            <option value="">Otra provincia...</option>
+                        </select>
+                    </label>
+                    <p>$0.00</p>
+                </div>
+                <div class="free-delivery">
+                    <label for="caba"><input type="radio" name="caba" id="caba">   Ciudad de Buenos Aires</label>
+                    <p>Gratis</p>
+                </div>
+                <div class="total-buy"><p>Total</p><p>$0.00</p></div>
+                <div class="buy"><button type="submit">Finalizar compra</button></div>
+                <div class="back-shop"><a href="/">Volver a la tienda!</a></div>
+            </form>
+        </div>
+    </main>
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

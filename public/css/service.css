@@ -1,0 +1,138 @@
+.section-title-servicio{
+    text-align: center;
+    color: var(--tex);
+    font-size:40px;
+    margin: 20px;
+}
+section.containers-servicio{
+    display: flex;
+    flex-direction: column;
+}
+
+article.card-servicio{
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 36px;
+    width: 100%;
+    margin: 20px auto;
+    display: contents;
+    
+}
+.card-servicio img{
+    border-radius: 15px;
+    height: 80%;
+    width: 100%;
+}
+ .card .card-contetn-servicio{
+    border-top: 1px solid var(--Gris-claro);
+    padding: 15px;
+}
+.icon-truck{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.icon-truck i{
+   font-size: 16px;
+   padding: 5px;
+   width: 30px;
+   height: 30px;
+   border: 1px solid var(--tex);
+   background-color: #FFF;
+   border-radius: 50%;
+   color: var(--tex);
+}
+
+
+.product-info .product-descuento{
+   width: 70%;
+}
+
+.product-name-servicio{
+   padding: 10px 0px 20px 14px; 
+      font-size: var(--extandar);
+   color: var(--grey);
+   text-align: center;
+
+}
+@media(min-width:768px){
+    .product-description p{
+        font-size: var(--etique-p);
+          }
+   .product-envio{
+       display: flex;
+   }
+
+   .contenedor{
+       display: flex;
+       justify-content: space-evenly;
+
+   }
+.price-envio{
+padding: 15px;
+}
+/* container de fotos */
+.container-foto-left img{
+    width: 100%;
+    margin: 2px;
+    padding: 10px;
+
+}
+   .container-foto-rigth{
+    width: 75%;
+    background-color: white;
+
+}
+.container-foto-rigth img{
+width: 100%;
+}
+ /* card-product-relacionado */
+   article.card-servicio{
+   max-width: 30%;   
+   box-shadow: 15px 15px 15px rgba(0, 0, 0, .4);
+        display: inline-block; 
+       padding: 15px;
+       margin-left: 15px; 
+       margin-bottom: 15px; 
+   }
+   
+article.card-servicio:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    
+}
+.product-name{
+    padding: 10px 0px;
+    font-size: var(--etique-p);
+    /* margin-left: 10
+px
+; */
+    color: var(--tex);
+}
+
+
+.redesSociales{
+    display: none;
+}
+
+
+.product-price .button-signos{
+    margin-left:4px ;
+
+}
+
+article.card-servicio:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+section.containers-servicio{
+    display: flex;
+    flex-direction: row;
+
+}
+}
+
+/* carrusel */

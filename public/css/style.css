@@ -1,0 +1,23 @@
+@import url("variables.css");
+@import url("generales.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("home.css");
+@import url("product-detail.css");
+@import url("carrito.css");
+@import url("forms.css");
+@import url('panel-administrador.css');
+@import url('vista-productos-administrador.css');
+@import url('formulario-editar-administrador.css');
+@import url('formulario-agregar-administrador.css');
+@import url('listadosProductos.css');
+@import url('header-admin.css');
+@import url('main-admin.css');
+@import url('products-form.css');
+@import url('search.css');
+@import url('carrusel.css');
+@import url('service.css');
+@import url('sliderProducts.css');
+@import url('profile.css');
+
+

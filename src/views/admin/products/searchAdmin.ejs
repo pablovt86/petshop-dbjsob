@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../../partials/head.ejs') %> 
+
+  <body>
+    <%- include('../../partials/header-administracion.ejs') %> 
+
+ <div class="container ">
+    <div class="result">
+<div class="title">
+    <h3>resultado producto: <%=search%> </h3>
+</div>
+      
+
+<% resultados.forEach(resultado => { %>
+
+    <article class="card-search">
+        <img
+          src="/images/products/<%= resultado.image[0] %> "
+          width="100%"
+          alt="Foto de cafetera Moulinex"
+        />
+        <div class="card-content">
+          <!-- <div class="icon-truck">
+            <i class="fas fa-truck"></i>
+          </div> -->
+          <hr>
+          <div class="product-info">
+            <h5 class="product-name"><%= resultado.name %> </h5>
+            <p class="product-price"><%= resultado.price %> </p>
+                </p>
+          </div>
+          <div class="button-container">
+        <form action="/carrito" method="get">
+            <button type="submit" class="button-card">comprar</button>
+          </form>
+
+          <form action="/productDetail" method="get">
+            <button type="submit" class="button-card-ver"><i class="far fa-eye"></i>ver</button>
+          </form>
+        </div>
+        </div>
+      </article>
+      <% }) %>
+    </div>
+    <div class="filtrador">
+        <h3>products a filtrar</h3>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    </div>
+
+
+
+<%- include('../../partials/footer.ejs') %> 
+
+
+
+  </body>
+</html>

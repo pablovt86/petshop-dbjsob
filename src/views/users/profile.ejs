@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/head.ejs') %> 
+<body >
+  <%- include('../partials/header.ejs') %> 
+      <section class ="container-profile">
+       <h3 class="title-profile">Profile User</h3>
+
+        <div class="image-profile">
+
+          <img src="/images/users/<%= session.user.avatar %> " alt="">
+        </div>
+         
+        <form class="container-form" action="/users/profile" >
+          <div class="form-row">
+            <div class="col-md-4 mb-3 ">
+              <label for="validationDefault01">Nombre</label>
+              <input type="text" class="form-control" id="validationDefault01" placeholder="nombre" value="<%= session.user.name %> " >
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">Apellido</label>
+              <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="<%= session.user.last_name %> " >
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefaultUsername">Email</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" value="<%= session.user.email %> " aria-describedby="inputGroupPrepend2" >
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault03">tel</label><% if(session.user.tel == "" ) {%> 
+                <input type="text" class="form-control" id="validationDefault03"  value="1134567676" placeholder="tel" >
+<% }else{ %> 
+              <input type="text" class="form-control" id="validationDefault03"  value="<%= session.user.tel %> " placeholder="City" >
+<% } %> 
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationDefault04">rol de user</label>
+              <input type="text" class="form-control" id="validationDefault04" value ="<%= session.user.rol %> " placeholder="State" >
+            </div>
+           
+          </div>
+         
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+        </div>
+
+      </section>
+|
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

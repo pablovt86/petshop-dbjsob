@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../../partials/head.ejs') %> 
+<body>
+    <%- include('../../partials/header.ejs') %> 
+    <section class="card-viseted">
+        <h3 class="section-title">listado de Productos</h3>
+    <div class="container-listProduct">
+      <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3"></div>
+          <article class="card">
+            <img
+              src="images/cajita-gato.png"
+              width="100%"
+              alt="Foto de cafetera Moulinex"
+            />
+            <div class="card-content">
+              
+              <hr>
+              <div class="product-info">
+                <h5 class="product-name">Contenedora elegante</h5>
+                <p class="product-price">$6.770</p>
+                    </p>
+              </div>
+              <div class="button-container">
+            <form action="/carrito" method="get">
+                <button type="submit" class="button-card">comprar</button>
+              </form>
+    
+              <form action="/productDetail" method="get">
+                <button type="submit" class="button-card-ver"><i class="far fa-eye"></i>ver</button>
+              </form>
+            </div>
+            </div>
+          </article>
+    
+   
+        </div>
+
+    </div>
+   
+    
+      
+    
+    
+    </section>
+
+
+<%- include('../partials/footer.ejs') %> 
+</body>
+</html>

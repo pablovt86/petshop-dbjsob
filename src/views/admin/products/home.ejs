@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../../partials/head.ejs') %> 
+
+  <body class="home">
+    <%- include('../../partials/header.ejs') %> 
+
+
+    <!------------------features categories------------>
+    <%- include('../../partials/carrusel.ejs') %> 
+<!--  end carrusel-->
+
+    <!-- <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="../images/category-1.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="../images/category-2.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="../images/category-3.jpg" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <%- include('../../partials/sliderProducts.ejs') %> 
+
+
+    <%- include('../../partials/service.ejs') %> 
+
+    <!------------------features products------------
+
+    <!------------------ Testimonial -------------->
+
+    <!------------------ brands -------------->
+
+
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="../images/logo-godrej.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-oppo.png" />
+          </div>
+          <div class="col-5">
+            <img src="../images/logo-coca-cola.png" />
+          </div>
+          <div class="col-5">
+            <img src="../images/logo-paypal.png" />
+          </div>
+          <div class="col-5">
+            <img src="../images/logo-philips.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------ boton de ir hacia arriba -------------->
+    <div id="button-up">
+      <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <!------------------ footer -------------->
+    <%- include('../../partials/footer.ejs') %> 
+    <!------------------js for toggle menu------------>
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <script src="/js/header.js"></script>
+    <script src="/js/carrusel.js"></script>
+    <script src="/js/product-slider.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+
+    <!-- <script src="scrip.js"></script> -->
+  </body>
+</html>

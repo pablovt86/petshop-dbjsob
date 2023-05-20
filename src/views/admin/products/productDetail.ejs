@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../../partials/head') %> 
+
+ 
+<body class="productDetail">
+ 
+<%- include('../../partials/header') %> 
+  
+   
+
+
+
+    <main class="productDetail-container">
+        <div class="contenedor">
+          
+  <!-- <div class="images-container"> -->
+          <div class="container-foto-left">
+            <div class="thumbnailImages">
+              <div class="foto1">  <img src="/images/cucha-gato1.png" alt="Imagen de producto" onclick="myFunction(this);"></div>
+                <div class="foto2"> <img src="/images/cucha-gato2.png" alt="Imagen de producto" onclick="myFunction(this);"></div>
+                  <div class="foto3">  <img src="/images/cucha-gato3.png" alt="Imagen de producto" onclick="myFunction(this);"></div>
+          </div>
+          
+          </div>
+          <div class="container-foto-rigth">
+            <img src="../images/cucha-gato.png" alt="Imagen de producto" id="expandedImg">
+
+         
+    </div>
+    
+      <div class="product-price">
+        <p>categorias ->subcategoria ->nombreProducto</p>
+         
+        <h2>Cucha Cama Media Esfera Puro Diseño</h2>
+
+          <h1>$ 37.000</h1>
+      
+      <p><i class="fa fa-credit-card" aria-hidden="true"></i>30 cuotas de <span>$1.353</span></p>
+     <div class="esp-a"> <a href="#"> ver mas detalle</a></div>
+      <div class="button-signos">
+      <div class="signos">
+        <div class="union">
+          <span> <button type="button" class="btn-subtract" onclick="subtract();">
+            -
+        </button></span>
+          <!-- <div> -->
+
+            <div id="count">1</div>
+          <!-- </div> -->
+
+          
+
+                    
+
+        
+          <span> <button type="button" id="btn-add" onclick="add();">
+            +
+        </button> </span>
+        </div>
+
+      </div>
+      <div class="button-shopping">
+        <form action="users/carrito" method="get">
+        <button type="submit" name="button-carrito" value="agregar al carrito">agregar al carrito</button>
+      </form>
+      </div>
+    </div>
+   
+
+
+
+<div class="product-envio">
+  <h4 class="title-envio"><i class="fas fa-truck"></i>
+    Envió a domicilio</h4>
+<div class="container-envio">
+  <div class="text">
+   <p>envio a municipio
+     lanus,quilmes,san martin,f.varela
+   </p> </div>
+  <div class="price-envio">
+    <h5 class="text-precio">$1100</h5>
+  </div>
+
+</div>
+
+</div>
+<div class="product-envio">
+  <div class="container-envio">
+    <div class="text"><p>retiro por sucursal del
+       correo argentino</p>
+      </div>
+    <div class="price-envio">
+      <h5 class="text-precio">$700</h5>
+    </div>
+  
+  </div>
+  
+  </div>
+<div class="product-envio">
+<div class="container-envio">
+  <div class="text"><p>retiro por sucursal a la 48hs despues  de efectuar el pago</p>
+    </div>
+  <div class="price-envio">
+    <h5 class="text-precio">Gratis</h5>
+  </div>
+
+</div>
+
+</div>
+
+<div class="relleno-1200px">
+  <img src="../images/images-forms/duo-2.png" alt="relleno">
+
+</div>
+
+</div>
+<!-- final de la section -->
+      </div>
+      <div class="product-description">
+          
+        <p>
+          La Cucha le brinda a tu gato un excelente ambiente para relajarse y descansar, su forma semisesférica le encantará, junto con lo mullido del amohadón interno hará que rapidamente lo adopte como su lugar de descanso.&nbsp; Además de esto viene con un juego didactico de pelotas para que tu gato se entretenga mientras no desacansa.
+        </p>
+        <p>CARATERSTICAS
+          <br>
+        - Tamaño : Tamaño perfecto para gatos pequeños de 40cm de diámetro X 22cm de Alto.
+        <br>
+        
+        
+        - Incluye juego de pelotas para entretenimiento de los felinos
+        <br>
+        
+        - Fácil de limpiar: La esfera plastica se puede limpiar fácilmente con agua y el amohadon en el lavarropas
+        
+        </p>
+                    
+                </div>
+
+      <div class="redesSociales">
+<h5 class ="title-redes">seguinos en nuestas redes</h5>
+        <ul>
+          <li> <i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-youtube"></i></i>
+          </li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li></li>
+        </ul>
+        </div>
+
+    
+      
+
+<!-- productos relacionados -->
+ 
+   <%- include('../../partials/productRelac') %> 
+    
+    <!------------------features products------------>
+
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="../images/exclusive.png" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Lo mejor en...</p>
+            <h1>SERVICIOS</h1>
+            <small
+              >baño y corte para  tus mascotas, paseos, veterianria y mucho mas...</small
+            >
+<!--  -->
+            <a href="" class="btn">Pedir Turno &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</main>
+<%- include('../../partials/footer.ejs') %> 
+
+    <script src="/js/productDetail.js"></script>
+  <script src="/js/header.js"> 
+  </script>
+   
+</body>
+</html>

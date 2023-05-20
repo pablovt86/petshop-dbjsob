@@ -1,0 +1,146 @@
+body.forms-body {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+/*contenedor principal*/
+div.forms {
+    display: flex; 
+    justify-content: center; 
+    background: lightgrey;
+}
+
+/*formulario*/
+div.forms form {
+    margin: 30px;
+}
+
+div.forms form div {
+    display: flex;
+}
+
+div.forms form div.img-card {
+    display: none; 
+    justify-content: center;
+}
+
+div.forms form div.icon-form {
+    justify-content: center;
+}
+
+div.forms form div img.icon-input {
+    border-bottom: solid 2px #555;
+}
+
+div.forms form div input.input-text {
+    border: none; 
+    background: none; 
+    outline: none; 
+    border-bottom: solid 2px #555; 
+    width: 100%;
+}
+
+div.forms form div.div-remember {
+    margin-bottom: 25px;
+}
+
+div.forms form div div.input-checkbox {
+    padding-left: 10px;
+}
+
+div.forms form div div label {
+    margin-left: 10px; 
+    color: #555;
+}
+
+/*botones*/
+div.forms form div button.button-form {
+    width: 100%; 
+    height: 40px; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: #000; 
+    color: white;
+    cursor: pointer;
+}
+
+div.forms form div.button-register a.button-link-register {
+    text-decoration: none;
+    width: 100%; 
+    height: 40px; 
+    background: #000; 
+    color: white; 
+    text-align: center; 
+    padding-top: 10px; 
+    font-size: 14px; 
+    border-radius: 10px;
+}
+
+/*link*/
+div.forms form div.link {
+    justify-content: end;
+}
+
+div.forms form div a.link-login {
+    color: #555; 
+    margin-bottom: 25px;
+}
+
+
+/*errores*/
+div.forms form div.div-error {
+    margin-bottom: 30px;
+}
+
+div.forms form div p.text-error {
+    color: red; 
+    font-weight: bold; 
+    padding-left: 3px; 
+    margin-top: 4px;
+}
+
+/*imagen lateral*/
+div.forms div.mascotas-img {
+    display: none; 
+    align-items: center;
+    margin-left: 15px;
+}
+
+@media (min-width: 480px){
+    div.forms form {width: 400px;}
+    
+    div.forms {background: none;}
+    
+    div.forms form {background: lightgrey; border-radius: 20px; padding: 20px;} 
+}
+
+@media (min-width: 768px){
+    div.forms form div.img-card {display: flex;}
+    
+    body {font-size: 16px;}    
+}
+
+@media (min-width: 992px){
+    div.forms form {border: none;}
+
+    div.forms form div.img-card {display: none;}
+
+    div.forms div.mascotas-img {display: flex;}
+
+    div.forms form {border-radius: 20px;}
+
+    div.forms form div.button-register a.button-link-register:hover {
+        border: solid 2px #000;
+        background: #fff; 
+        color: #000; 
+        font-size: 16px; 
+        font-weight: bold;
+    }
+
+    div.forms form div button.button-form:hover {
+        border: solid 2px #000; 
+        background: #fff; 
+        color: #000; 
+        font-size: 16px; 
+        font-weight: bold;
+    }
+}

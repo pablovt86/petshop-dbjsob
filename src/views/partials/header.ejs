@@ -1,0 +1,177 @@
+<header class=" main-header">
+  <!-- linea verde fluo que aparece en modo tablet -->
+  <div class="linear-table">
+    <ul>
+      <li> <i class="fab fa-facebook-f"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+      <li><i class="fab fa-youtube"></i></i>
+      </li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li></li>
+      </ul>
+  </div>
+<div class="main-header-top-bar">
+<div class="shopping"> <i class="fal fa-shopping-cart"></i></div>
+
+<div class="caja-foto">
+  <img src="../images/zyro-image4.png" >
+</div> 
+<div class="container-search">
+
+<p class="buscador"><i class="fas fa-search" onclick="search()"></i></p>
+<form action="/product/search" method="get" class="search-tablet">
+  <input type="text" name="searchHome" placeholder="Buscar productos, marcas y más" class="search-form_input">
+  <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+  </form>
+
+</div>
+<div class="user-icons-desktop " >
+  <div class="user">
+      <% if (typeof session.user != "undefined") { %>
+          <i class="fas fa-user"></i><span class="session"></span>
+          <div class="menu-user">
+              <a href="/users/profile">Mis datos</a>
+              <a href="/users/logout">Cerrar sesión</a>
+              <% if (session.user.rol === "ROL_ADMIN") { %>
+                  <a href="/admin/administrador">ADMIN</a>
+              <% } %>
+          </div>
+      <% } else {%>
+          <a href="/users/login"><i class="fas fa-user"></i></a>
+      <% } %>
+  </div>
+  <a href="/"><i class="fas fa-shopping-cart"></i></a>
+</div>
+
+</div>
+
+
+<!-- burgue modo mobile -->
+<div class = "burger">
+<!-- <input type="checkbox" id="menu"> -->
+<button class="button-burger" id="button-burger" onclick="containerHidden()"><label for="menu"> ☰ </label></button>
+
+<ul class="list-category">  
+<li>
+<a href="/">Productos</a> </li>
+<li>
+<a href="">Mascotas </a></li>
+<li>
+  <a href="/register">crea tu cuenta   </a>
+</li>
+<!-- <li>
+  <a href="/login">ingresa </a><i class="fas fa-sign-in-alt"></i>
+</li> -->
+
+
+</ul>
+</div>
+
+<!-- elementos ocultos barra lateral de busqueda -->
+<div class="search-hidden" id="search-hidden">
+<div class="modal-tach" id="modal-tach"><h5 class="modal-end" onclick="tach()">x</h5>
+
+<h5>Buscar</h5></div>
+<form action="" method="get" class="search-form">
+<input type="text" name="search" placeholder="Buscar productos, marcas y más" class="search-form_input">
+<button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+</form>
+</div>
+
+
+<div class="container-hidden" id="container-hidden" >
+<div class="traslineal">
+<ul>
+<li> <i class="fab fa-facebook-f"></i></li>
+<li><i class="fab fa-instagram"></i></li>
+<li><i class="fab fa-youtube"></i></i>
+</li>
+<li><i class="fab fa-twitter"></i></li>
+<li></li>
+</ul>
+</div>
+
+
+<div class="nabvar-select">
+<nav class="main-navbar">
+
+<select name="" id="">
+
+<option value="perro">
+perro
+</option>
+</select>
+<select name="" id="">
+<option value="gato">
+gato
+</option>
+</select>
+<select name="" id="">
+<option value="mascota">
+mascotas 
+</option>
+</select>
+<select name="" id="">
+
+  <option value="perro">
+  perro
+  </option>
+  </select>
+
+
+</nav>
+</div>
+<div class="header-bottom">
+  <div class="user-icons-mobile " >
+
+  <div class="user-mobile">
+    <% if (typeof session.user != "undefined") { %>
+        <i class="fas fa-user"></i><span class="session-mobile"></span>
+        <div class="menu-user-mobile">
+            <a href="/users/profile">Mis datos</a>
+            <a href="/users/logout">Cerrar sesión</a>
+            <% if (session.user.rol === "ROL_ADMIN") { %>
+                <a href="/admin/index">ADMIN</a>
+            <% } %>
+        </div>
+    <% } else {%>
+        <a href="/users/login"><i class="fas fa-user"></i></a>
+    <% } %>
+</div>
+</div>
+<!-- <ul><li><a href="/users/register"> registrate </a></li>
+  <li>
+    <a href="/carrito">
+      <i class="fal fa-shopping-cart"></i>
+    </a> </li> -->
+<li><a href="#" id="end-table" onclick="endTable()"> x </a></li></ul>
+
+
+</div>
+</div>
+<div class="table">
+  <ul class="list-category-table"> 
+    <li>
+      <a href="/carrito">
+        <i class="fal fa-shopping-cart"></i>
+      </a> </li>
+      <li> 
+    <li>
+    <a href="/">Productos</a> </li>
+    <li>
+    <a href="">Mascotas </a></li>
+    <li>
+      <a href="/register">crea tu cuenta   </a>
+    </li>
+    <!-- <li>
+      <a href="/login">ingresa </a><i class="fas fa-sign-in-alt"></i>
+    </li> -->
+    
+    
+    </ul>
+ 
+</div>
+
+</header>
+<script src="/js/header.js"> 
+</script>

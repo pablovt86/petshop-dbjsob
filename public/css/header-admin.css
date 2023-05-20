@@ -1,0 +1,176 @@
+/* Oculto los checkbox */
+.barra-navegacion-admin input#check-menu {
+    display: none;
+}
+
+
+
+/* Eventos checked en el menu hamburguesa  */
+.barra-navegacion-admin input#check-menu:checked ~ .menu-navegacion-admin {
+    margin-left: 0px;
+}
+
+.barra-navegacion-admin input#check-menu:checked ~ .check-menu {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Barra de navegación */
+.barra-navegacion-admin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+    background-color: #234;;
+}
+
+/* Imagen perfil */
+.avatar-admin {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Iconos */
+.fa-bars-admin {
+    font-size: 36px;
+    color: #fff;
+    padding: 20px;
+}
+
+.fa-home-admin, .fa-tags-admin, .fa-folder-plus-admin, .fa-users-admin, .fa-sign-out-alt-admin {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+
+
+/* Menu desplegable */
+.menu-navegacion-admin {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 75%;
+    margin-left: -75%;
+    transition: all 0.5s;
+    background-color: #234;
+    border-top: 2px solid #fff;
+}
+
+.menu-navegacion-admin li .enlace-admin {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+
+
+/* Barra de búsqueda */
+.formulario-search-admin {
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #fff;
+}
+
+.contenedor-search-admin {
+    width: 90%;
+    display: flex;
+    border: 2px solid #555;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.input-search-admin {
+    height: 30px;
+    width: 80%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.btn-search-admin {
+    height: 30px;
+    width: 20%;
+    border: none;
+    background: none;
+}
+
+#btn-search-admin {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0;
+    color: #555;
+}
+
+
+
+
+@media (min-width: 992px){
+    .barra-navegacion-admin {
+        height: 80px;
+        background: #f0f0f0;
+    }
+
+    .check-menu {
+        display: none;
+    }
+    
+    .avatar-admin {
+        margin-bottom: -10px;
+        width: 100px;
+        height: 90px;
+        border-radius: 50%;
+    }
+
+    .menu-navegacion-admin {
+        /* position: absolute; */
+        top: 100px;
+        left: 0px;
+        width: 100%;
+        border-right: none;
+        margin-left: 0%;
+        display: flex;
+        background: #234;
+        font-size: 17px;
+    }
+
+    .menu-navegacion-admin .menu-li-admin {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .menu-navegacion-admin .menu-li-admin .enlace-admin {
+        display: block;
+        padding: 20px 30px;
+        border: none;
+        color: #fff;
+    }
+
+    .menu-navegacion-admin .menu-li-admin .enlace-admin:hover {
+        font-weight: bold;
+    }
+    
+    .barra-navegacion-admin {
+        border: none;
+    }
+
+    .formulario-search-admin {
+        display: flex;
+        padding: 0px;
+        border: none;
+        position: absolute;
+        top:-65px;
+        left: 33%;
+        
+    }
+
+    .input-search-admin {
+        width: 400px;
+    }
+}

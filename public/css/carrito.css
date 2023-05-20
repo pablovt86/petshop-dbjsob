@@ -1,0 +1,240 @@
+body.carrito-body {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+form.buy-cart-form {
+    background: lightgrey;
+}
+
+form div.buy-cart {
+    display: flex; 
+    padding: 10px 20px 10px;
+}
+
+form div.encabezados-carrito  {
+    display: flex; 
+    padding: 10px 20px 10px; 
+    height: 40px; 
+    background: #555; 
+    color: white;
+}
+
+form div.encabezados-carrito p {
+    color: white;
+}
+
+form div.encabezados-carrito p.article-title {
+    width: 60%;
+}
+
+form div.contenedor-articulo {
+    display: flex;
+}
+
+form div.contenedor-articulo div.vista-articulo {
+    width: 30%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content:start; 
+    margin: 0px 20px;
+}
+
+form div.contenedor-articulo div.vista-articulo div.imagen-cucha {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+form div.contenedor-articulo div.vista-articulo div.imagen-cucha img {
+    width: 100px; 
+    border-radius: 10px;
+}
+
+form div.contenedor-articulo div.accountant {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0px;
+}
+
+form div.contenedor-articulo div.accountant button.button-accountant {
+    width: 40px; 
+    height: 40px;  
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    background: #555; 
+    color: white; 
+    cursor: pointer;
+}
+
+form div.contenedor-articulo div.accountant input.input-amount {
+    width: 40px; 
+    height: 40px; 
+    margin: 0px 5px; 
+    border: solid 2px #555; 
+    border-radius: 5px; 
+    outline: none;
+}
+
+form div.contenedor-articulo div.reseña {
+    width: 30%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding-top: 10px;
+}
+
+form div.contenedor-articulo div.reseña p {
+    text-align: center;
+}
+
+form div.contenedor-articulo div.reseña button.delete {
+    display: flex;
+     justify-content: center; 
+     margin-top: 10px; 
+     width: 30px; 
+     border: 2px solid; 
+     border-radius: 5px; 
+     background: none; 
+     cursor: pointer;
+}
+
+
+
+form div.contenedor-articulo div.price-item {
+    width: 20%;
+    display: flex;
+    justify-content: end; 
+    padding: 10px 20px;
+}
+
+form div.contenedor-articulo div.sub-item {
+    width: 20%; 
+    display: flex; 
+    justify-content: end; 
+    padding: 10px 20px;
+}
+
+form div.encabezados-carrito p.price-title {
+    width: 20%; 
+    text-align: end;
+}
+
+form div.encabezados-carrito p.sub-title {
+    width: 20%; 
+    text-align: end;
+}
+
+form div.gral-delivery {
+    display: flex; 
+    height: 40px; 
+    background: #555; 
+    color: white;
+}
+
+form div.gral-delivery p {
+    padding: 10px 20px 10px;
+    color:white;
+}
+
+form div.pay-delivery {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 20px 10px;
+}
+
+form div.pay-delivery select {
+    width: 80px; 
+    height: 30px; 
+    border: none; 
+    border-radius: 5px; 
+    background: #555; 
+    color: white;
+    cursor: pointer;
+}
+
+form div.pay-delivery select option {
+    border: none; 
+    background: #555; 
+    color: white; 
+}
+
+form div.free-delivery {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 20px 10px;
+}
+
+form div.total-buy {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 20px 10px; 
+    height: 40px; 
+    background: #555; 
+}
+
+form div.total-buy p {
+    color: white;
+}
+
+form div.buy {
+    display: flex; 
+    justify-content: end;
+}
+
+form div.buy button {
+    border: none; 
+    border-radius: 10px; 
+    width: 50%; 
+    height: 40px; 
+    background: #555; 
+    color: white; 
+    margin: 20px;
+}
+
+
+
+form div.back-shop {
+    display: flex;
+}
+
+form div.back-shop a {
+    font-size: 12px; 
+    color: #555; 
+    margin: 20px 0px 20px 20px;
+}
+
+@media (min-width: 480px) {
+    .buy-cart-form {width: 480px; border-radius: 10px; margin: 20px 0px 30px;}
+    .buy-cart-container {display: flex; justify-content: center;}
+    form div.pay-delivery select {width: 80px;}
+}
+
+@media (min-width: 768px) {
+    form div.pay-delivery select {width: 90px; font-size: 16px;}
+    form div.back-shop a {font-size: 14px;}
+}
+
+@media (min-width: 992px) {
+    .buy-cart-form {width: 800px; font-size: 18px;}
+    form div.contenedor-articulo div.vista-articulo div.imagen-cucha img {width: 200px;}
+    form div.buy button {width: 30%;}
+    form div.contenedor-articulo div.accountant button.button-accountant:hover {
+        background: black; 
+        font-size: 20px;
+    }
+
+    form div.buy button {font-size: 16px;}
+
+    form div.buy button:hover {
+        background: black; 
+        color: white; 
+        font-size: 16px; 
+        font-weight: bold; 
+        cursor: pointer;
+    }
+
+    form div.contenedor-articulo div.reseña button.delete:hover, form div.contenedor-articulo div.reseña button.delete img:hover {
+        width: 35px; 
+    }
+}

@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "name": "pablo",
+        "last_name": "vacoti",
+        "email": "mrrobot@gmail.com",
+        "pass": "$2b$10$sa3lH4K0AWfYXjLlJZxmPO1TgExFzlGkqgmeo.3R5TDShmBtD4fAa",
+        "avatar": "1640643465386_img_.png",
+        "rol": "ROL_ADMIN",
+        "tel": "",
+        "province": ""
+    },
+
+    {
+        "id": 17,
+        "name": "pablo",
+        "last_name": "vacoti",
+        "email": "pablo@mail.com",
+        "pass": "123456",
+        "avatar": "1640643465386_img_.png",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 18,
+        "name": "tahiel",
+        "last_name": "vacoti",
+        "email": "tahiel@gmail.com",
+        "pass": "$2b$10$z90E./Q/wih/qCx8klWJwemKPY6SDTni.cRg1xV5p6lFSGn2Wx3B.",
+        "avatar": "1640776393937_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 19,
+        "name": "delfina",
+        "last_name": "cardozo",
+        "email": "delfina@gmail.com",
+        "pass": "$2b$10$tg4IEx5Tc3784l4jRjoUSuci8k7m8lkXLdSPRJ7LM1LJtDr0VBu/G",
+        "avatar": "1640777554674_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 20,
+        "name": "delfina",
+        "last_name": "cardozo",
+        "email": "delfi@gmail.com",
+        "pass": "$2b$10$zQL3TAP6KJwF7tsWxUdmheGGdfu0mgOb/IX5084Av5yhfOUHJ9eQ.",
+        "avatar": "1640777607986_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 21,
+        "name": "zoe",
+        "last_name": "vacoti",
+        "email": "zoe@gmail.com",
+        "pass": "$2b$10$9YTc5m0TDItheyRq2ppOJO4qU39UwK4fHoOo4i8nMxYgYXrkSC5Ka",
+        "avatar": "1640778022268_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 22,
+        "name": "zoe",
+        "last_name": "vacoti",
+        "email": "zoeoriana@gmail.com",
+        "pass": "$2b$10$2/jH3Jz9xyWhVIv3YDkB2OKua0Eu4MmeH7RH0vqek.09KGg.ZQO3m",
+        "avatar": "1640778630540_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 23,
+        "name": "juli",
+        "last_name": "cardozo",
+        "email": "julicardozo29@gmail.com",
+        "pass": "123456",
+        "avatar": "1640889045989_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 24,
+        "name": "albert",
+        "last_name": "eloy",
+        "email": "albert@gmail.com",
+        "pass": "123456",
+        "avatar": "1640961668807_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 25,
+        "name": "alejandro",
+        "last_name": "vaccotti",
+        "email": "alejandrovaccotti@gmail.com",
+        "pass": "$2b$10$sa3lH4K0AWfYXjLlJZxmPO1TgExFzlGkqgmeo.3R5TDShmBtD4fAa",
+        "avatar": "1641336033057_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 26,
+        "name": "delfina",
+        "last_name": "cardozo",
+        "email": "delfinacardozo@gmail.com",
+        "pass": "123456",
+        "avatar": "1641413830180_img_.jpg",
+        "rol": "ROL_USER",
+        "tel": "",
+        "province": ""
+    },
+    {
+        "id": 27,
+        "name": "pablo",
+        "last_name": "cardozo",
+        "email": "ureca@gmail.com",
+        "pass": "$2a$10$KM5Ci82ne4KqT3BT9hZ.G.P.v3AwXqu2UUIPH0LyTKxU08OWQ9okm",
+        "avatar": "default-image.png",
+        "rol": "ROL_USER",
+        "tel": "11511578189",
+        "province": ""
+    }
+]

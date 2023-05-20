@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<%- include('../../partials/head.ejs')%>
+
+<body class="vista-admin-producto">
+
+    <%- include('../../partials/header-administracion.ejs')%>
+
+    <main class="tablero-admin-producto">
+        <div class="contenedor-admin-producto">
+            <p class="titulo-formulario-admin">Editando el producto:</p>
+            <form class="formulario-admin-producto"action="/admin/product/update/<%=products.id %>?_method=PUT" method="POST" enctype="multipart/form-data" >
+                <div class="contenedor-datos-1">
+                    <div class="datos-productos-admin">
+                        <label for="agregar-nombre">Nombre de producto:</label>
+                        <div class="contenedor-agregar-dato">
+                            <i class="fas fa-pencil-alt"></i>
+                            <input class="input-agregar-dato" name="name" type="text" id="agregar-nombre" value="<%= products.name %> ">
+                        </div>
+                    </div>
+                    <div class="datos-productos-admin">
+                        <label for="agregar-color">descuento:</label>
+                        <div class="contenedor-agregar-dato">
+                            <i class="fas fa-paint-brush"></i>
+                            <input class="input-agregar-dato" name="discount" type="text" id="agregar-discount" value="<%= products.discount %> ">
+                        </div>
+                    </div>
+                    <div class="datos-productos-admin">
+                        <label for="agregar-precio">Precio:</label>
+                        <div class="contenedor-agregar-dato">
+                            <i class="fas fa-dollar-sign"></i>
+                            <input class="input-agregar-dato" name="price" type="text" id="agregar-precio" value="<%= products.price %> ">
+                        </div>
+                    </div>
+                    <div class="descripcion-productos-admin">
+                        <label for="descripcion">Descripción del producto</label>
+                        <div>
+                            <textarea class="textarea-admin" name="description" id="descripcion" cols=""   rows="10" ><%= products.description %></textarea>
+                        </div>
+                    </div>    
+                </div>
+                <div class="contenedor-datos-2">
+                    <div class="select-opciones-administrador">
+                        <label>Categorías:</label>
+                        <div class="select-opcion-administrador">
+                            <select class="seleccion-admin" name="category">
+                                <option selected hidden value="">categorias</option>
+                                <% categories.forEach(category => { %>
+                              
+                                <option class="opcion-admin" value="<%- category.id %> <%- category.id === +products.category?"selected": "" %>  " ><%=category.name  %>  </option>
+                                <% }) %> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select-opciones-administrador">
+                        <label>Sub-Categorías:</label>
+                        <div class="select-opcion-administrador">
+                            <select class="seleccion-admin" name="subcategory">
+                                <option selected hidden value="">sub-categorias</option>
+                                <% subcategory.forEach(subcategory => { %>
+                              
+                                <option class="opcion-admin" value="<%- subcategory %> " <%- subcategory === +products.subcategory?"selected": "" %> > <%=subcategory  %>  </option>
+                                <% }) %> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="upload-image">
+                        <label>Agregar imagen:</label>
+                        <div class="contenedor-imagen-admin">
+                            <label for="image-create-product">- Subir imagen -</label>
+                            <input class="imagen-admin" type="file" name="image" id="image-create-product" multiple>
+                        </div>
+                        <div class="imagen-producto-admin" id="image-preview">
+                            <img src="" 
+                            alt="imagen previa del producto" id="imagen-previa">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                    <div class="datos-productos-admin">
+                        <label for="agregar-marca">Marca:</label>
+                        <div class="contenedor-agregar-dato">
+                            <i class="fas fa-dollar-sign"></i>
+                            <input class="input-agregar-dato" name="marca" type="text" id="agregar-marca" value="<%= products.marca %> ">
+                        </div>
+                    </div>
+                    <div class="contenedor-botones-admin">
+                        <button class="contenedor-boton-admin" type="reset">
+                            <i class="fas fa-times-circle"></i>
+                            <p class="titulo-boton-admin">Cancelar</p>
+                        </button>
+                        <button class="contenedor-boton-admin" type="submit">
+                            <i class="fas fa-check-circle"></i>
+                            <p class="titulo-boton-admin">Guardar</p>
+                        </button>
+                    </div>
+                </div>
+              
+            </form>
+        </div>
+    </main>  
+</body>
+</html>

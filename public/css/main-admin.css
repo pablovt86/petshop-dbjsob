@@ -1,0 +1,30 @@
+.main-panel-admin {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-image: url(../images/images-admin/fondo-1.jpg);
+}
+
+
+@media (min-width: 992px) {
+    .main-panel-admin {
+        width: 100vw;
+        height: 87vh;
+        position: absolute;
+        z-index: -1;
+        top: 130px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-panel-admin {
+        width: 100vw;
+        height: 87vh;
+        position: absolute;
+        z-index: -1;
+        top: 100px;
+    }
+}
